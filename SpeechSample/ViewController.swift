@@ -12,10 +12,10 @@ import Speech
 class ViewController: UIViewController {
 
     // "ja-JP"を指定すると日本語になります。
-    private let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "ja-JP"))!
-    private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
-    private var recognitionTask: SFSpeechRecognitionTask?
-    private let audioEngine = AVAudioEngine()
+    fileprivate let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "ja-JP"))!
+    fileprivate var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
+    fileprivate var recognitionTask: SFSpeechRecognitionTask?
+    fileprivate let audioEngine = AVAudioEngine()
     
     @IBOutlet var textView: UITextView!    
     @IBOutlet var button: UIButton!
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    private func requestRecognizerAuthorization() {
+    fileprivate func requestRecognizerAuthorization() {
         // 認証処理
         SFSpeechRecognizer.requestAuthorization { authStatus in
             // メインスレッドで処理したい内容のため、OperationQueue.main.addOperationを使う
@@ -66,7 +66,7 @@ class ViewController: UIViewController {
         }
     }
     
-    private func startRecording() throws {
+    fileprivate func startRecording() throws {
         refreshTask()
         
         let audioSession = AVAudioSession.sharedInstance()
@@ -116,14 +116,14 @@ class ViewController: UIViewController {
         try startAudioEngine()
     }
     
-    private func refreshTask() {
+    fileprivate func refreshTask() {
         if let recognitionTask = recognitionTask {
             recognitionTask.cancel()
             self.recognitionTask = nil
         }
     }
     
-    private func startAudioEngine() throws {
+    fileprivate func startAudioEngine() throws {
         // startの前にリソースを確保しておく。
         audioEngine.prepare()
         
