@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E83ABE511EB33C250032F372 /* SpeechSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83ABE501EB33C250032F372 /* SpeechSampleUITests.swift */; };
-		E8BF3AF71EB1D6300016170F /* SpeechSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF3AF61EB1D6300016170F /* SpeechSampleTests.swift */; };
 		E8F0C8541E890AF20029F399 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F0C8531E890AF20029F399 /* AppDelegate.swift */; };
 		E8F0C8561E890AF20029F399 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F0C8551E890AF20029F399 /* ViewController.swift */; };
 		E8F0C8591E890AF20029F399 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8F0C8571E890AF20029F399 /* Main.storyboard */; };
@@ -25,22 +24,12 @@
 			remoteGlobalIDString = E8F0C84F1E890AF20029F399;
 			remoteInfo = SpeechSample;
 		};
-		E8BF3AF91EB1D6300016170F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E8F0C8481E890AF20029F399 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E8F0C84F1E890AF20029F399;
-			remoteInfo = SpeechSample;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E83ABE4E1EB33C240032F372 /* SpeechSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeechSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E83ABE501EB33C250032F372 /* SpeechSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechSampleUITests.swift; sourceTree = "<group>"; };
 		E83ABE521EB33C250032F372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8BF3AF41EB1D6300016170F /* SpeechSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeechSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8BF3AF61EB1D6300016170F /* SpeechSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechSampleTests.swift; sourceTree = "<group>"; };
-		E8BF3AF81EB1D6300016170F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8F0C8501E890AF20029F399 /* SpeechSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F0C8531E890AF20029F399 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8F0C8551E890AF20029F399 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,13 +42,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		E83ABE4B1EB33C240032F372 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E8BF3AF11EB1D6300016170F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -86,20 +68,10 @@
 			path = SpeechSampleUITests;
 			sourceTree = "<group>";
 		};
-		E8BF3AF51EB1D6300016170F /* SpeechSampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				E8BF3AF61EB1D6300016170F /* SpeechSampleTests.swift */,
-				E8BF3AF81EB1D6300016170F /* Info.plist */,
-			);
-			path = SpeechSampleTests;
-			sourceTree = "<group>";
-		};
 		E8F0C8471E890AF20029F399 = {
 			isa = PBXGroup;
 			children = (
 				E8F0C8521E890AF20029F399 /* SpeechSample */,
-				E8BF3AF51EB1D6300016170F /* SpeechSampleTests */,
 				E83ABE4F1EB33C250032F372 /* SpeechSampleUITests */,
 				E8F0C8511E890AF20029F399 /* Products */,
 				E8F0C8651E890B180029F399 /* Frameworks */,
@@ -110,7 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				E8F0C8501E890AF20029F399 /* SpeechSample.app */,
-				E8BF3AF41EB1D6300016170F /* SpeechSampleTests.xctest */,
 				E83ABE4E1EB33C240032F372 /* SpeechSampleUITests.xctest */,
 			);
 			name = Products;
@@ -158,24 +129,6 @@
 			productReference = E83ABE4E1EB33C240032F372 /* SpeechSampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		E8BF3AF31EB1D6300016170F /* SpeechSampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E8BF3AFD1EB1D6300016170F /* Build configuration list for PBXNativeTarget "SpeechSampleTests" */;
-			buildPhases = (
-				E8BF3AF01EB1D6300016170F /* Sources */,
-				E8BF3AF11EB1D6300016170F /* Frameworks */,
-				E8BF3AF21EB1D6300016170F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E8BF3AFA1EB1D6300016170F /* PBXTargetDependency */,
-			);
-			name = SpeechSampleTests;
-			productName = SpeechSampleTests;
-			productReference = E8BF3AF41EB1D6300016170F /* SpeechSampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		E8F0C84F1E890AF20029F399 /* SpeechSample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8F0C8621E890AF20029F399 /* Build configuration list for PBXNativeTarget "SpeechSample" */;
@@ -209,13 +162,6 @@
 						ProvisioningStyle = Manual;
 						TestTargetID = E8F0C84F1E890AF20029F399;
 					};
-					E8BF3AF31EB1D6300016170F = {
-						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 8G8N33HP22;
-						LastSwiftMigration = 0830;
-						ProvisioningStyle = Manual;
-						TestTargetID = E8F0C84F1E890AF20029F399;
-					};
 					E8F0C84F1E890AF20029F399 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 9XKH4HC88L;
@@ -238,7 +184,6 @@
 			projectRoot = "";
 			targets = (
 				E8F0C84F1E890AF20029F399 /* SpeechSample */,
-				E8BF3AF31EB1D6300016170F /* SpeechSampleTests */,
 				E83ABE4D1EB33C240032F372 /* SpeechSampleUITests */,
 			);
 		};
@@ -246,13 +191,6 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		E83ABE4C1EB33C240032F372 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E8BF3AF21EB1D6300016170F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,14 +218,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E8BF3AF01EB1D6300016170F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E8BF3AF71EB1D6300016170F /* SpeechSampleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E8F0C84C1E890AF20029F399 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -304,11 +234,6 @@
 			isa = PBXTargetDependency;
 			target = E8F0C84F1E890AF20029F399 /* SpeechSample */;
 			targetProxy = E83ABE531EB33C250032F372 /* PBXContainerItemProxy */;
-		};
-		E8BF3AFA1EB1D6300016170F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E8F0C84F1E890AF20029F399 /* SpeechSample */;
-			targetProxy = E8BF3AF91EB1D6300016170F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -363,39 +288,6 @@
 				PROVISIONING_PROFILE_SPECIFIER = "iOSTeam Wild Card Provisioning Profile";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = SpeechSample;
-			};
-			name = Release;
-		};
-		E8BF3AFB1EB1D6300016170F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 8G8N33HP22;
-				INFOPLIST_FILE = SpeechSampleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.jeis.inet.SpeechSampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeechSample.app/SpeechSample";
-			};
-			name = Debug;
-		};
-		E8BF3AFC1EB1D6300016170F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 9XKH4HC88L;
-				INFOPLIST_FILE = SpeechSampleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.jeis.inet.SpeechSampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeechSample.app/SpeechSample";
 			};
 			name = Release;
 		};
@@ -532,15 +424,6 @@
 				E83ABE571EB33C250032F372 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		E8BF3AFD1EB1D6300016170F /* Build configuration list for PBXNativeTarget "SpeechSampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E8BF3AFB1EB1D6300016170F /* Debug */,
-				E8BF3AFC1EB1D6300016170F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		E8F0C84B1E890AF20029F399 /* Build configuration list for PBXProject "SpeechSample" */ = {
 			isa = XCConfigurationList;
